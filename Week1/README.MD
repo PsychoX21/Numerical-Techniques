@@ -137,7 +137,7 @@ Solve the same initial value problem using the RK4 method.
 
 ### Graphs:
 - Combined plot comparing RK4, and the exact solution.
-![RK4 Method Plot](Plots/RK4.png)
+![RK4 Method Plot](Plots/rk4.png)
 
 ### Key Observations and Insights:
 - RK4 offers better accuracy than Euler for the same step sizes.
