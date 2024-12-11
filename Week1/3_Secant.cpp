@@ -4,7 +4,7 @@
 using namespace std;
 
 double f(double x) {
-    return (pow(numbers::e,2*x) + x - 5);
+    return (pow(exp(1),2*x) + x - 5);
 }
 
 double secant(double oldx, double newx, const double& tolerance = 0.01) {
@@ -31,7 +31,7 @@ int main() {
     return 0;
 }
 
-*/
+/*
 OUTPUT
 
 Initial Guess: 0, 1
