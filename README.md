@@ -10,21 +10,13 @@ Each week's work is organized into its respective folder, with solutions to assi
 
 ---
 
-## 🗂️ Repository Structure
+## 📚 Weekly Assignments
 
-```plaintext
-.
-├── Week 1/
-│   ├── Problem1_Setup.md    # Instructions to set up the environment
-│   ├── Problem2_NewtonRaphson.cpp
-│   ├── Problem3_Secant.cpp
-│   ├── Problem4_EulerMethod.cpp
-│   ├── Problem5_RK4Method.cpp
-│   ├── Problem6_SolveLinearEquations.cpp
-│   ├── plots/                # Contains generated plots for Euler and RK4 methods
-│   ├── week1_readme.md       # Detailed documentation of Week 1 work
-├── Week 2/                   # Placeholder for Week 2 assignments
-├── Week 3/                   # Placeholder for Week 3 assignments
-├── Week 4/                   # Placeholder for Week 4 assignments
-├── README.md                 # This main README file
-└── LICENSE                   # License for the repository
+### Week 1: Foundations of Numerical Techniques
+
+* Setup: Configured C++ environment with VS Code and GNUplot.
+* Newton-Raphson Method: Found roots of a polynomial equation to 5 decimal places.
+* Secant Method: Determined roots for a non-linear equation using iterative approximation.
+* Euler's Method: Solved a first-order ODE with different step sizes, comparing results to the exact solution.
+* RK4 Method: Implemented the Runge-Kutta 4th order method and compared accuracy to Euler’s method.
+* Solving Linear Systems: Used Jacobi and Gauss-Seidel methods to solve a set of linear equations iteratively.
