@@ -17,7 +17,7 @@ double lengthc(double x) {
 }
 
 double f(double x) {
-    return (4*sin(x/2) + x - 2*numbers::pi);
+    return (4*sin(x/2) + x - 2*exp(1));
 }
 
 double fprime(double x) {
@@ -37,7 +37,7 @@ double nrm(double guess, const double& length_tolerance) {
 }
 
 int main() {
-    double guess{numbers::pi/2};
+    double guess{exp(1)/2};
     double solution_x = nrm(guess, 5*1e-19);
 
     cout << solution_x << endl;
