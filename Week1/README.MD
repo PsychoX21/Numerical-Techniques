@@ -11,15 +11,8 @@ Welcome to the Week 1 report for **Numerical Techniques in Physics**. This READM
   - **VS Code**: IDE for coding and debugging.
   - **GNUplot**: For plotting graphs.
 
-### Key Observations and Insights:
-- Learned to configure VS Code for C++ with the GCC compiler.
-- Tested GNUplot and ensured compatibility for graphical outputs.
-
-### Challenges Faced:
-- Minor issues during GNUplot installation due to missing dependencies, resolved by following the Spoken Tutorial guide.
-
 ### Learnings:
-- Understood the basics of using IDEs and plotting tools for numerical computations.
+- Understood the basics of plotting tools for numerical computations.
 
 ---
 
@@ -35,15 +28,12 @@ Find a root of the equation \(x^2 - 8x + 11 = 0\) to 5 decimal places using the 
 - Derivation involves Taylor expansion to approximate \(f(x)\).
 
 ### Results:
-- Converged root: **\(x = 5.85657\)**
-- Number of iterations: **5**
+- Converged root: **\(x = 6.23607\)**
+- Number of iterations: **4**
 
 ### Key Observations and Insights:
 - The method’s quadratic convergence ensured rapid results for this polynomial.
 - Precision was achieved efficiently within a few iterations.
-
-### Challenges Faced:
-- None for this problem as it had a well-defined derivative and initial guess.
 
 ---
 
