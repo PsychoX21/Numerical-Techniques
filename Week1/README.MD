@@ -17,8 +17,6 @@ Welcome to the Week 1 report for **Numerical Techniques in Physics**. This READM
 ---
 
 ## **Problem 2: Newton-Raphson Method**
-### Task:
-Find a root of the equation \(x^2 - 8x + 11 = 0\) to 5 decimal places using the initial guess \(x_0 = 6\).
 
 ### Method Overview:
 - Formula used:
@@ -27,12 +25,40 @@ Find a root of the equation \(x^2 - 8x + 11 = 0\) to 5 decimal places using the 
   \]
 - Derivation involves Taylor expansion to approximate \(f(x)\).
 
-### Results:
+### Task 2.1:
+Find a root of the equation \(x^2 - 8x + 11 = 0\) to 5 decimal places using the initial guess \(x_0 = 6\).
+
+#### Formulation of the Problem
+1. **Equation to Solve**:  
+   The function for which we find the root is:\[f(x) = x^2 - 8x + 11\]
+
+2. **Derivative**:  
+   The derivative \(f'(x)\) is:\[f'(x) = 2x - 8\]
+
+#### Results:
 - Converged root: **\(x = 6.23607\)**
 - Number of iterations: **4**
 
+### Task 2.2:
+The circle has a radius of 1. The longer circular arc joining points **A** and **B** is **twice as long** as the chord **AB**. The task is to determine the length of the chord **AB**, accurate to **18 decimal places**.
+
+#### Formulation of the Problem
+1. **Arc-Chord Relationship**:
+   The length of the longer arc joining **A** and **B** is given by:\[L_{\text{arc}} = 2L_{\text{chord}}\]  
+
+2. **Geometric Representation**:
+   Let the angle subtended by the chord **AB** at the center of the circle be \(\theta\). The relationships are:  
+   - Major Arc length: \(L_{\text{arc}} = 2\piR - R\theta = 2\pi-\theta\) (since \(R = 1\)).
+   - Chord length: \(L_{\text{chord}} = 2R \sin(\frac{\theta}{2}) = 2\sin(\frac{\theta}{2})\).  
+
+3. **Equation for Newton-Raphson**:  
+   Combining these, the equation to solve becomes:\[f(\theta) = 4\sin\left(\frac{\theta}{2}\right) + \theta - 2\pi = 0\]  
+
+4. **Derivative for Newton-Raphson**:  
+   The derivative \(f'(\theta)\) is:\[f'(\theta) = 2\cos\left(\frac{\theta}{2}\right) + 1\]
+
 ### Key Observations and Insights:
-- The method’s quadratic convergence ensured rapid results for this polynomial.
+- The method’s quadratic convergence ensured rapid results.
 - Precision was achieved efficiently within a few iterations.
 
 ---
@@ -49,14 +75,11 @@ Find the root of \(f(x) = e^{2x} + x - 5\) using the secant method with initial 
 - Unlike Newton-Raphson, it does not require explicit derivatives.
 
 ### Results:
-- Converged root: **\(x = 0.62133\)**
-- Number of iterations: **7**
+- Converged root(precise to 2 decimal places): **\(x = 0.73\)**
+- Number of iterations: **5**
 
 ### Key Observations and Insights:
-- Secant method converges slower than Newton-Raphson but is more versatile.
-
-### Challenges Faced:
-- Iterative refinement required precise calculations for non-linear functions.
+- Secant method converges slower than Newton-Raphson.
 
 ---
 
@@ -78,9 +101,9 @@ using step sizes \(h = 0.1, 0.05, 0.025\).
 ### Results:
 | Step Size (h) | Approximation (\(y(1)\)) | Exact Solution | Error (%) |
 |---------------|--------------------------|----------------|-----------|
-| 0.1           | 0.8652                   | 0.8765         | 1.29      |
-| 0.05          | 0.8726                   | 0.8765         | 0.44      |
-| 0.025         | 0.8751                   | 0.8765         | 0.16      |
+| 0.1           | 0.1398                   | 0.1692         | 17.4      |
+| 0.05          | 0.1547                   | 0.1692         | 8.56      |
+| 0.025         | 0.1620                   | 0.1692         | 4.25      |
 
 ### Graphs:
 - A combined plot of all step sizes and the exact solution was created to visualize accuracy improvements.
@@ -105,62 +128,49 @@ Solve the same initial value problem using the RK4 method.
   y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)
   \]
 - Intermediate slopes (\(k_1, k_2, k_3, k_4\)) computed to refine accuracy.
+- Derived by Taylor expansion of y as single variable(x) function and y' as double variable(y,x) function
 
 ### Results:
 | Step Size (h) | Approximation (\(y(1)\)) | Exact Solution | Error (%) |
 |---------------|--------------------------|----------------|-----------|
-| 0.1           | 0.8758                   | 0.8765         | 0.08      |
-| 0.05          | 0.8763                   | 0.8765         | 0.02      |
-| 0.025         | 0.8764                   | 0.8765         | 0.01      |
+| 0.1           | 0.169174                 | 0.169169       | 0.003     |
 
 ### Graphs:
-- Combined plot comparing RK4, Euler, and the exact solution.
+- Combined plot comparing RK4, and the exact solution.
 ![RK4 Method Plot](Plots/RK4.png)
 
 ### Key Observations and Insights:
 - RK4 offers better accuracy than Euler for the same step sizes.
 - Computational cost is justified by significantly lower error.
 
-### Challenges Faced:
-- None, as the method is inherently stable and robust.
-
 ---
 
 ## **Problem 6: Solving Linear Systems (Jacobi & Gauss-Seidel Methods)**
 ### Task:
 Solve the linear equations system using iterative methods.
+\[\begin{aligned}
+4x - y - z &= 3 \\
+-2x + 6y + z &= 9 \\
+-x + y + 7z &= -6
+\end{aligned}\]
+
 
 ### Observations:
-- **Jacobi Method**: Converged in **15 iterations**
-- **Gauss-Seidel Method**: Converged in **10 iterations**
+- **Jacobi Method**: Converged in **13 iterations**
+- **Gauss-Seidel Method**: Converged in **7 iterations**
+
+Solution: 
+* **x** = 1.000001  
+* **y** = 1.999999  
+* **z** = -1.000001  
 
 ### Key Insights:
 - Gauss-Seidel converges faster due to sequential updates.
 - Code was generalized for larger systems, preparing for future use in higher dimensions.
 
----
-
-## **Performance Highlights**
-- Successfully solved all problems using the prescribed methods.
-- Graphical outputs validated accuracy for Problems 4 and 5.
-- Iterative methods were effectively implemented and extended for general use.
+### Note:
+- These methods are used for determining the solutions of a strictly diagonally dominant system of linear equations,
+\[\text{A matrix } \mathbf{A} = [a_{ij}] \text{ is diagonally dominant if:}\]
+\[|a_{ii}| \geq \sum_{\substack{j=1 \\ j \neq i}}^{n} |a_{ij}| \quad \text{for all } i = 1, 2, \dots, n.\]
 
 ---
-
-## **Learnings**
-- Deep understanding of numerical methods, their derivation, and application.
-- Importance of step sizes, convergence criteria, and iterative refinement.
-- Basics of using GitHub for collaborative coding.
-
----
-
-## **Future Scope**
-- Extend the generalized code for high-dimensional systems (>10,000x10,000).
-- Explore higher-order Runge-Kutta methods for even better accuracy.
-- Investigate optimization techniques for iterative solvers.
-
----
-
-## **Code Highlights**
-- Clean and modular C++ implementations for all problems.
-- Effective use of loops and conditionals for convergence checks.
