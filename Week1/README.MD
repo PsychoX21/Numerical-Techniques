@@ -25,17 +25,17 @@ Welcome to the Week 1 report for **Numerical Techniques in Physics**. This READM
 - Derivation involves Taylor expansion to approximate \(f(x)\).
 
 ### Task 2.1:
-Find a root of the equation \(x^2 - 8x + 11 = 0\) to 5 decimal places using the initial guess \(x_0 = 6\).
+Find a root of the equation x^2 - 8x + 11 = 0 to 5 decimal places using the initial guess x_0 = 6.
 
 #### Formulation of the Problem
 1. **Equation to Solve**:  
-   The function for which we find the root is:f(x) = x^2 - 8x + 11
+   The function for which we find the root is: f(x) = x^2 - 8x + 11
 
 2. **Derivative**:  
-   The derivative \(f'(x)\) is:\[f'(x) = 2x - 8\]
+   The derivative f'(x) is: f'(x) = 2x - 8
 
 #### Results:
-- Converged root: **\(x = 6.23607\)**
+- Converged root: **x = 6.23607**
 - Number of iterations: **4**
 
 ### Task 2.2:
@@ -43,18 +43,18 @@ The circle has a radius of 1. The longer circular arc joining points **A** and *
 
 #### Formulation of the Problem
 1. **Arc-Chord Relationship**:
-   The length of the longer arc joining **A** and **B** is given by:\[L_{\text{arc}} = 2L_{\text{chord}}\]  
+   The length of the longer arc joining **A** and **B** is given by: L_{arc} = 2L_{chord}  
 
 2. **Geometric Representation**:
    Let the angle subtended by the chord **AB** at the center of the circle be \(\theta\). The relationships are:  
-   - Major Arc length: \(L_{\text{arc}} = 2\piR - R\theta = 2\pi-\theta\) (since \(R = 1\)).
-   - Chord length: \(L_{\text{chord}} = 2R \sin(\frac{\theta}{2}) = 2\sin(\frac{\theta}{2})\).  
+   - Major Arc length: L_{arc} = 2&piR - &theta = 2&pi-&theta (since R = 1).
+   - Chord length: L_{chord} = 2R * sin(&theta / 2) = 2 * sin(&theta / 2).  
 
 3. **Equation for Newton-Raphson**:  
-   Combining these, the equation to solve becomes:\[f(\theta) = 4\sin\left(\frac{\theta}{2}\right) + \theta - 2\pi = 0\]  
+   Combining these, the equation to solve becomes: f(θ) = 4 * sin(&theta / 2) + &theta - 2&pi = 0
 
 4. **Derivative for Newton-Raphson**:  
-   The derivative \(f'(\theta)\) is:\[f'(\theta) = 2\cos\left(\frac{\theta}{2}\right) + 1\]
+   The derivative f'(&theta) is: f'(&theta) = 2 * cos(&theta / 2) + 1
 
 ### Key Observations and Insights:
 - The method’s quadratic convergence ensured rapid results.
@@ -64,17 +64,15 @@ The circle has a radius of 1. The longer circular arc joining points **A** and *
 
 ## **Problem 3: Secant Method**
 ### Task:
-Find the root of \(f(x) = e^{2x} + x - 5\) using the secant method with initial guesses \(x_0 = 0\) and \(x_1 = 1\).
+Find the root of f(x) = e^{2x} + x - 5 using the secant method with initial guesses x_0 = 0 and x_1 = 1.
 
 ### Method Overview:
 - Formula used:
-  \[
-  x_{n+1} = x_n - \frac{f(x_n)(x_n - x_{n-1})}{f(x_n) - f(x_{n-1})}
-  \]
+  x_{n+1} = x_n - (f(x_n)(x_n - x_{n-1})) / (f(x_n) - f(x_{n-1}))
 - Unlike Newton-Raphson, it does not require explicit derivatives.
 
 ### Results:
-- Converged root(precise to 2 decimal places): **\(x = 0.73\)**
+- Converged root(precise to 2 decimal places): **x = 0.73**
 - Number of iterations: **5**
 
 ### Key Observations and Insights:
@@ -85,16 +83,12 @@ Find the root of \(f(x) = e^{2x} + x - 5\) using the secant method with initial 
 ## **Problem 4: Euler Method**
 ### Task:
 Solve the initial value problem:
-\[
-y' + 2y = x^3e^{-2x}, \quad y(0) = 1
-\]
-using step sizes \(h = 0.1, 0.05, 0.025\).
+y' + 2y = x^3e^{-2x},  y(0) = 1
+using step sizes h = 0.1, 0.05, 0.025.
 
 ### Method Overview:
 - Derived from the first-order Taylor expansion:
-  \[
-  y_{n+1} = y_n + h \cdot f(x_n, y_n)
-  \]
+  y_{n+1} = y_n + h * f(x_n, y_n)
 - Accuracy improves as the step size decreases.
 
 ### Results:
@@ -123,10 +117,14 @@ Solve the same initial value problem using the RK4 method.
 
 ### Method Overview:
 - Formula used:
-  \[
-  y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)
-  \]
-- Intermediate slopes (\(k_1, k_2, k_3, k_4\)) computed to refine accuracy.
+  y_{n+1} = y_n + (h / 6) * (k_1 + 2k_2 + 2k_3 + k_4)
+
+  Where:
+  - k_1 = f(t_n, y_n)
+  - k_2 = f(t_n + h/2, y_n + h/2 * k_1)
+  - k_3 = f(t_n + h/2, y_n + h/2 * k_2)
+  - k_4 = f(t_n + h, y_n + h * k_3)
+- Intermediate slopes (k_1, k_2, k_3, k_4) computed to refine accuracy.
 - Derived by Taylor expansion of y as single variable(x) function and y' as double variable(y,x) function
 
 ### Results:
@@ -147,12 +145,9 @@ Solve the same initial value problem using the RK4 method.
 ## **Problem 6: Solving Linear Systems (Jacobi & Gauss-Seidel Methods)**
 ### Task:
 Solve the linear equations system using iterative methods.
-\[\begin{aligned}
-4x - y - z &= 3 \\
--2x + 6y + z &= 9 \\
+4x - y - z &= 3
+-2x + 6y + z &= 9
 -x + y + 7z &= -6
-\end{aligned}\]
-
 
 ### Observations:
 - **Jacobi Method**: Converged in **13 iterations**
@@ -169,7 +164,8 @@ Solution:
 
 ### Note:
 - These methods are used for determining the solutions of a strictly diagonally dominant system of linear equations,
-\[\text{A matrix } \mathbf{A} = [a_{ij}] \text{ is diagonally dominant if:}\]
-\[|a_{ii}| \geq \sum_{\substack{j=1 \\ j \neq i}}^{n} |a_{ij}| \quad \text{for all } i = 1, 2, \dots, n.\]
+A matrix `A = [a_{ij}]` is diagonally dominant if:
+
+|a_{ii}| ≥ Σ_{j=1, j != i}^{n} |a_{ij}|  for all i = 1, 2, ..., n.
 
 ---
