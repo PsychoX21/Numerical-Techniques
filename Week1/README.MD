@@ -20,9 +20,8 @@ Welcome to the Week 1 report for **Numerical Techniques in Physics**. This READM
 
 ### Method Overview:
 - Formula used:
-  \[
-  x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
-  \]
+  x_(n+1) = x_n - f(x_n) / f'(x_n)
+
 - Derivation involves Taylor expansion to approximate \(f(x)\).
 
 ### Task 2.1:
@@ -30,7 +29,7 @@ Find a root of the equation \(x^2 - 8x + 11 = 0\) to 5 decimal places using the 
 
 #### Formulation of the Problem
 1. **Equation to Solve**:  
-   The function for which we find the root is:\[f(x) = x^2 - 8x + 11\]
+   The function for which we find the root is:f(x) = x^2 - 8x + 11
 
 2. **Derivative**:  
    The derivative \(f'(x)\) is:\[f'(x) = 2x - 8\]
