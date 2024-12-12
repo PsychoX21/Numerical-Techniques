@@ -46,15 +46,15 @@ The circle has a radius of 1. The longer circular arc joining points **A** and *
    The length of the longer arc joining **A** and **B** is given by: L_{arc} = 2L_{chord}  
 
 2. **Geometric Representation**:
-   Let the angle subtended by the chord **AB** at the center of the circle be \(\theta\). The relationships are:  
-   - Major Arc length: L_{arc} = 2&piR - &theta = 2&pi-&theta (since R = 1).
-   - Chord length: L_{chord} = 2R * sin(&theta / 2) = 2 * sin(&theta / 2).  
+   Let the angle subtended by the chord **AB** at the center of the circle be &theta;. The relationships are:  
+   - Major Arc length: L_{arc} = 2&pi;R - &theta; = 2&pi;-&theta; (since R = 1).
+   - Chord length: L_{chord} = 2R * sin(&theta; / 2) = 2 * sin(&theta; / 2).  
 
 3. **Equation for Newton-Raphson**:  
-   Combining these, the equation to solve becomes: f(θ) = 4 * sin(&theta / 2) + &theta - 2&pi = 0
+   Combining these, the equation to solve becomes: f(&theta;) = 4 * sin(&theta; / 2) + &theta; - 2&pi; = 0
 
 4. **Derivative for Newton-Raphson**:  
-   The derivative f'(&theta) is: f'(&theta) = 2 * cos(&theta / 2) + 1
+   The derivative f'(&theta;) is: f'(&theta;) = 2 * cos(&theta; / 2) + 1
 
 ### Key Observations and Insights:
 - The method’s quadratic convergence ensured rapid results.
