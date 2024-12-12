@@ -145,9 +145,9 @@ Solve the same initial value problem using the RK4 method.
 ## **Problem 6: Solving Linear Systems (Jacobi & Gauss-Seidel Methods)**
 ### Task:
 Solve the linear equations system using iterative methods.
-4x - y - z &= 3
--2x + 6y + z &= 9
--x + y + 7z &= -6
+4x - y - z = 3
+-2x + 6y + z = 9
+-x + y + 7z = -6
 
 ### Observations:
 - **Jacobi Method**: Converged in **13 iterations**
