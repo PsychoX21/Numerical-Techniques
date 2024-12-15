@@ -15,7 +15,7 @@ Each week's work is organized into its respective folder, with solutions to assi
 ### Week 1: Foundations of Numerical Techniques
 
 * Setup: Configured C++ environment with VS Code and GNUplot.
-* Newton-Raphson Method: Found roots of a polynomial equation to 5 decimal places.
+* Newton-Raphson Method: Found roots of a polynomial equation.
 * Secant Method: Determined roots for a non-linear equation using iterative approximation.
 * Euler's Method: Solved a first-order ODE with different step sizes, comparing results to the exact solution.
 * RK4 Method: Implemented the Runge-Kutta 4th order method and compared accuracy to Euler’s method.
