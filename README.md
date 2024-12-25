@@ -20,3 +20,8 @@ Each week's work is organized into its respective folder, with solutions to assi
 * Euler's Method: Solved a first-order ODE with different step sizes, comparing results to the exact solution.
 * RK4 Method: Implemented the Runge-Kutta 4th order method and compared accuracy to Euler’s method.
 * Solving Linear Systems: Used Jacobi and Gauss-Seidel methods to solve a set of linear equations iteratively.
+
+### Week 2: Second Order ODEs with some applications
+
+* Solving second-order ODEs with Euler and RK4.
+* Simulating the Van der Pol Oscillator and Lorenz Attractor.
