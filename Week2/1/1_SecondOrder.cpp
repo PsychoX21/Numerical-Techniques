@@ -70,10 +70,10 @@ int main () {
     ofstream rk("rk_0.1_.txt");
     ofstream exact("exact_solution.txt");
 
-    euler(x, y, ydash, 0.1, 2, euler1);
-    euler(x, y, ydash, 0.01, 2, euler2);
-    rungeKutta(x, y, ydash, 0.1, 2, rk);
-    exactSolution(0, 2, 0.01, exact);
+    euler(x, y, ydash, 0.1, 10, euler1);
+    euler(x, y, ydash, 0.01, 10, euler2);
+    rungeKutta(x, y, ydash, 0.1, 10, rk);
+    exactSolution(0, 10, 0.01, exact);
 
     euler1.close();
     euler2.close();

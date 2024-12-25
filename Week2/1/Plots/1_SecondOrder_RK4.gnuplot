@@ -8,8 +8,8 @@ set grid
 
 set margin 10,10,5,5
 
-set xrange [0:2]
-set xtics 0.1
+set xrange [0:10]
+set xtics 0.5
 
 f(x) = 3 * exp(-x) /4 + exp(-3*x) / 4 + sin(x) / 2
 
