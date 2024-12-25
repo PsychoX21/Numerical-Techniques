@@ -24,4 +24,5 @@ Each week's work is organized into its respective folder, with solutions to assi
 ### Week 2: Second Order ODEs with some applications
 
 * Solving second-order ODEs with Euler and RK4.
-* Simulating the Van der Pol Oscillator and Lorenz Attractor.
+* Van der Pol Oscillator: Simulated and analyzed the oscillator’s behavior for varying parameters.
+* Lorenz Attractor: Explored chaotic dynamics and sensitivity to initial conditions.
