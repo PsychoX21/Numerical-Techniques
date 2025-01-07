@@ -26,3 +26,12 @@ Each week's work is organized into its respective folder, with solutions to assi
 * Solving second-order ODEs with Euler and RK4.
 * Van der Pol Oscillator: Simulated and analyzed the oscillator’s behavior for varying parameters.
 * Lorenz Attractor: Explored chaotic dynamics and sensitivity to initial conditions.
+
+### Week 3: Solving Poisson's Equation with Finite-Difference Method
+
+* Objective: Solve the 2D Poisson equation:
+∂²U/∂x² + ∂²U/∂y² = -ρ(x, y)
+for various charge configurations using numerical methods.
+* Finite-Difference Approximation: Discretized the partial derivatives using a grid and approximated the second derivatives using:
+∂²U/∂x² ≈ [U(x+h) - 2U(x) + U(x-h)] / h²
+Converted the equation into a system of linear equations.
