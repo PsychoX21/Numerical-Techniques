@@ -1,6 +1,6 @@
-# Week 3: Numerical Techniques in Physics - Hydrogen Atom  
+# Week 4: Numerical Techniques in Physics - Hydrogen Atom  
 
-Welcome to the Week 3 report for **Numerical Techniques in Physics**. This week, we focused on solving the Schrödinger equation numerically for the hydrogen atom, exploring its eigenstates and eigenvalues.
+Welcome to the Week 4 report for **Numerical Techniques in Physics**. This week, we focused on solving the Schrödinger equation numerically for the hydrogen atom, exploring its eigenstates and eigenvalues.
 
 ---
 
